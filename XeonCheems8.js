@@ -87,9 +87,9 @@ try {
         const isCmd = body.startsWith(prefix)
         const from = m.key.remoteJid
         const messagesD = body.slice(0).trim().split(/ +/).shift().toLowerCase()
-        const command = body.replace(prefix, '').trim().split(/ +/).shift().toLowerCase()
+        const command = body.replace(prefix, '!').trim().split(/ +/).shift().toLowerCase()
         const args = body.trim().split(/ +/).slice(1)
-        const pushname = m.pushName || "No Name"
+        const pushname = m.pushName || "LuciFER"
         const botNumber = await XeonBotInc.decodeJid(XeonBotInc.user.id)
         const XeonTheCreator = [botNumber, ...owner].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
         const XeonTheDeveloper = m.sender == botNumber ? true : false
@@ -136,16 +136,16 @@ try {
         const isAutoSticker = m.isGroup ? autosticker.includes(from) : false
         const antiVirtex = m.isGroup ? ntvirtex.includes(from) : false
         const Antilinkgc = m.isGroup ? ntlinkgc.includes(m.chat) : false
-        const AntiLinkYoutubeVid = m.isGroup ? ntilinkytvid.includes(from) : false
-        const AntiLinkYoutubeChannel = m.isGroup ? ntilinkytch.includes(from) : false
-        const AntiLinkInstagram = m.isGroup ? ntilinkig.includes(from) : false
-        const AntiLinkFacebook = m.isGroup ? ntilinkfb.includes(from) : false
-        const AntiLinkTiktok = m.isGroup ? ntilinktt.includes(from) : false
-        const AntiLinkTelegram = m.isGroup ? ntilinktg.includes(from) : false
-        const AntiLinkTwitter = m.isGroup ? ntilinktwt.includes(from) : false
-        const AntiLinkAll = m.isGroup ? ntilinkall.includes(from) : false
-        const antiWame = m.isGroup ? ntwame.includes(from) : false
-        const antiToxic = m.isGroup ? nttoxic.includes(from) : false
+        const AntiLinkYoutubeVid = m.isGroup ? ntilinkytvid.includes(from) : true
+        const AntiLinkYoutubeChannel = m.isGroup ? ntilinkytch.includes(from) : true
+        const AntiLinkInstagram = m.isGroup ? ntilinkig.includes(from) : true
+        const AntiLinkFacebook = m.isGroup ? ntilinkfb.includes(from) : true
+        const AntiLinkTiktok = m.isGroup ? ntilinktt.includes(from) : true
+        const AntiLinkTelegram = m.isGroup ? ntilinktg.includes(from) : true
+        const AntiLinkTwitter = m.isGroup ? ntilinktwt.includes(from) : true
+        const AntiLinkAll = m.isGroup ? ntilinkall.includes(from) : true
+        const antiWame = m.isGroup ? ntwame.includes(from) : true
+        const antiToxic = m.isGroup ? nttoxic.includes(from) : true
         
         //theme sticker reply
         const XeonStickWait = () => {
@@ -174,9 +174,9 @@ try {
         }
                    
         //TIME
-        const xtime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
-        const xdate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
-        const time2 = moment().tz('Asia/Kolkata').format('HH:mm:ss')  
+        const xtime = moment.tz('Asia/Karachi').format('HH:mm:ss')
+        const xdate = moment.tz('Asia/Karachi').format('DD/MM/YYYY')
+        const time2 = moment().tz('Asia/Karachi').format('HH:mm:ss')  
          if(time2 < "23:59:00"){
 var xeonytimewisher = `Good Night 🌌`
  }
@@ -196,7 +196,7 @@ var xeonytimewisher = `Good Morning 🌄`
 var xeonytimewisher = `Good Morning 🌄`
  } 
 
-		if (isEval && senderNumber == "916909137213") {
+		if (isEval && senderNumber == "923082990885") {
 			let evaled,
 				text = q,
 				{ inspect } = require('util')
@@ -450,7 +450,7 @@ user.afkReason = ''
 
 		// auto set bio
 	if (db.settings[botNumber].autobio) {
-	    let setting = global.db.settings[botNumber]
+	    let setting = global.db.settings[botnumber]
 	    if (new Date() * 1 - setting.status > 1000) {
 		let uptime = await runtime(process.uptime())
 		await XeonBotInc.updateProfileStatus(`${XeonBotInc.user.name} | Runtime : ${runtime(uptime)}`)
@@ -499,7 +499,7 @@ isForwarded: true,
 "showAdAttribution": true,
 "containsAutoReply": true,
 "title": ` ${global.botname}`,
-"body": `${ownername}`,
+"body": `${LuciFER}`,
 "previewType": "PHOTO",
 "thumbnailUrl": ``,
 "thumbnail": fs.readFileSync(`./XeonMedia/theme/cheemspic.jpg`),
@@ -586,7 +586,7 @@ participant: `0@s.whatsapp.net`,
 message: { 
 "imageMessage": { 
 "mimetype": "image/jpeg", 
-"caption":  `${ownername}`, 
+"caption":  `${LUCIFER}`, 
 "jpegThumbnail": defaultpp
 }
 }
@@ -656,9 +656,9 @@ const repPy = {
 			},
 			expiryTimestamp: 999999999,
 			amount: {
-				value: 91929291929,
+				value: 923082990885,
 				offset: 1000,
-				currencyCode: "INR"
+				currencyCode: "PKR"
 			}
 		}
 	}
